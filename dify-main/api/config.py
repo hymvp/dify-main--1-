@@ -146,8 +146,6 @@ class Config:
         self.OCI_STORAGE_TENANCY_OCID = get_env('OCI_STORAGE_TENANCY_OCID')
         self.OCI_STORAGE_USER_OCID = get_env('OCI_STORAGE_USER_OCID')
         self.OCI_STORAGE_FINGERPRINT = get_env('OCI_STORAGE_FINGERPRINT')
-        self.OCI_STORAGE_PRIVATE_KEY = get_env('OCI_STORAGE_PRIVATE_KEY')
-        self.OCI_STORAGE_REGION = get_env('OCI_STORAGE_REGION')
 
         # ------------------------
         # Vector Store Configurations.

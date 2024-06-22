@@ -10,7 +10,7 @@ class StorageConfigs(BaseModel):
         description='storage type,'
                     ' default to `local`,'
                     ' available values are `local`, `s3`, `azure-blob`, `aliyun-oss`, `google-storage`, `oci-storage`.',
-        default='local',
+        default='oci-storage',
     )
 
     STORAGE_LOCAL_PATH: str = Field(
