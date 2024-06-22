@@ -9,7 +9,7 @@ class StorageConfigs(BaseModel):
     STORAGE_TYPE: str = Field(
         description='storage type,'
                     ' default to `local`,'
-                    ' available values are `local`, `s3`, `azure-blob`, `aliyun-oss`, `google-storage`.',
+                    ' available values are `local`, `s3`, `azure-blob`, `aliyun-oss`, `google-storage`, `oci-storage`.',
         default='local',
     )
 

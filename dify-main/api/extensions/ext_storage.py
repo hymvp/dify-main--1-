@@ -9,7 +9,7 @@ from extensions.storage.google_storage import GoogleStorage
 from extensions.storage.local_storage import LocalStorage
 from extensions.storage.s3_storage import S3Storage
 from extensions.storage.tencent_storage import TencentStorage
-
+from extensions.storage.oci_storage import OCIStorage
 
 class Storage:
     def __init__(self):
@@ -35,6 +35,10 @@ class Storage:
             )
         elif storage_type == 'tencent-cos':
             self.storage_runner = TencentStorage(
+                app=app
+            )
+        elif storage_type == 'oci-storage':
+            self.storage_runner = OCIStorage(
                 app=app
             )
         else:
