@@ -76,7 +76,7 @@ services:
       # you must use the HTTPS protocol and set the configuration to `SameSite=None, Secure=true, HttpOnly=true`.
       #
       # The type of storage to use for storing user files. Supported values are `local` and `s3` and `azure-blob` and `google-storage`, Default: `local`
-      STORAGE_TYPE: s3
+      STORAGE_TYPE: oci-storage
       # The path to the local storage directory, the directory relative the root path of API service codes or absolute path. Default: `storage` or `/home/john/storage`.
       # only available when STORAGE_TYPE is `local`.
       STORAGE_LOCAL_PATH: storage
@@ -254,7 +254,7 @@ services:
       # The configurations of celery broker.
       CELERY_BROKER_URL: redis://:difyai123456@redis:6379/1
       # The type of storage to use for storing user files. Supported values are `local` and `s3` and `azure-blob` and `google-storage`, Default: `local`
-      STORAGE_TYPE: s3
+      STORAGE_TYPE: oci-storage
       STORAGE_LOCAL_PATH: storage
       # The S3 storage configurations, only available when STORAGE_TYPE is `s3`.
       S3_USE_AWS_MANAGED_IAM: 'false'
