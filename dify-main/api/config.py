@@ -141,6 +141,14 @@ class Config:
         self.TENCENT_COS_SECRET_KEY = get_env('TENCENT_COS_SECRET_KEY')
         self.TENCENT_COS_SCHEME = get_env('TENCENT_COS_SCHEME')
 
+        # OCI Storage settings
+        self.OCI_STORAGE_BUCKET_NAME = get_env('OCI_STORAGE_BUCKET_NAME')
+        self.OCI_STORAGE_TENANCY_OCID = get_env('OCI_STORAGE_TENANCY_OCID')
+        self.OCI_STORAGE_USER_OCID = get_env('OCI_STORAGE_USER_OCID')
+        self.OCI_STORAGE_FINGERPRINT = get_env('OCI_STORAGE_FINGERPRINT')
+        self.OCI_STORAGE_PRIVATE_KEY = get_env('OCI_STORAGE_PRIVATE_KEY')
+        self.OCI_STORAGE_REGION = get_env('OCI_STORAGE_REGION')
+
         # ------------------------
         # Vector Store Configurations.
         # Currently, only support: qdrant, milvus, zilliz, weaviate, relyt, pgvector
