@@ -142,10 +142,13 @@ class Config:
         self.TENCENT_COS_SCHEME = get_env('TENCENT_COS_SCHEME')
 
         # OCI Storage settings
-        self.OCI_STORAGE_BUCKET_NAME = get_env('OCI_STORAGE_BUCKET_NAME')
-        self.OCI_STORAGE_TENANCY_OCID = get_env('OCI_STORAGE_TENANCY_OCID')
-        self.OCI_STORAGE_USER_OCID = get_env('OCI_STORAGE_USER_OCID')
-        self.OCI_STORAGE_FINGERPRINT = get_env('OCI_STORAGE_FINGERPRINT')
+        self.OCI_BUCKET_NAME = get_env('OCI_BUCKET_NAME')
+        self.OCI_USER_OCID = get_env('OCI_USER_OCID')  
+        self.OCI_KEY_FILE = get_env('OCI_KEY_FILE')
+        self.OCI_FINGERPRINT = get_env('OCI_FINGERPRINT')
+        self.OCI_TENANCY_OCID = get_env('OCI_TENANCY_OCID')
+        self.OCI_REGION = get_env('OCI_REGION')
+       
 
         # ------------------------
         # Vector Store Configurations.
